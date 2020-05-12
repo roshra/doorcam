@@ -1,0 +1,12 @@
+ [Unit]
+ Description=door cam Service
+ After=multi-user.target
+
+ [Service]
+ Type=idle
+ User=pi
+ Group=pi
+ ExecStart=/bin/bash /home/pi/pic.sh
+
+ [Install]
+ WantedBy=multi-user.target
